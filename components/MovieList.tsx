@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { isEmpty } from "lodash";
 import MovieCard from "./MovieCard";
@@ -9,6 +10,9 @@ interface MovieListProps {
 
 const MovieList: React.FC<MovieListProps> = ({ data, title }) => {
   if (isEmpty(data)) {
+    return null;
+  }
+  if (!Array.isArray(data)) {
     return null;
   }
   return (
