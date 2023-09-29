@@ -27,7 +27,7 @@ const Profiles = () => {
                 />
               </div>
               <div className="mt-4 text-gray-400 text-2xl text-center group-hover:text-white">
-                {user?.name}
+                {user?.name || "Username"}
               </div>
             </div>
           </div>

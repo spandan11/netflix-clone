@@ -80,7 +80,7 @@ const Navbar = () => {
             onClick={toggleAccountMenu}
             className="flex flex-row items-center gap-2 cursor-pointer relative"
           >
-            <div className="w-6 h-6 lg:w-10 lg;h-10 rounded-md overflow-hidden">
+            <div className="w-6 h-6 lg:w-10 lg:h-10 rounded-md overflow-hidden">
               <Image
                 src="/images/default-blue.png"
                 alt="profile"

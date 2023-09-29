@@ -2,10 +2,7 @@ import serverAuth from "@/libs/serverAuth";
 import prisma from "@/prisma";
 import { NextResponse } from "next/server";
 
-export async function GET<Params extends Record<string, any>>(
-  req: Request,
-  { params }: { params: Params }
-) {
+export async function GET(req: Request, { params }: any) {
   try {
     await serverAuth();
     const { movieId } = params;
